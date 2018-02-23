@@ -101,7 +101,7 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
 
                 <div class="row-fluid">
 
-<div class="bs-example">
+<!-- <div class="bs-example">
    <div class="dropdown">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -109,7 +109,7 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
             <li><a href="#">Another action</a></li>
         </ul>
     </div>
-</div>
+</div> -->
 
                     <div id="logo" class="span8<?php if($this->params->get('classe_nome_principal', '') != '') echo ' '.$this->params->get('classe_nome_principal'); ?>">
                         <a href="<?php echo JURI::root(); ?>" title="<?php echo $this->params->get('nome_principal', 'Nome principal'); ?>">
@@ -252,11 +252,11 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="footer-ferramenta">
+<!--             <div class="footer-ferramenta">
                 <div class="container">
                     <?php echo $this->params->get('mensagem_final_ferramenta', '<p>Desenvolvido com o CMS de c&oacute;digo aberto <a href="http://www.joomla.org">Joomla</a></p>'); ?>
                 </div>
-            </div>
+            </div> -->
             <div class="footer-atalhos visible-phone">
                 <div class="container">
                     <span class="hide">Fim do conteúdo da página</span>

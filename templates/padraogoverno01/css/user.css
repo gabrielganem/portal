@@ -1,0 +1,16 @@
+main #navigation nav h2 {
+    border-top: 3px solid #0bb !important; 
+    padding: 12px 12px 5px 10px;
+    height: 32px;
+    background: #0bb !important; 
+    text-transform: uppercase;
+    font-size: .85em;
+    line-height: 1em;
+    color: #fff !important;
+    position: relative
+}
+
+main .subnav
+{
+  background-color: #ccc !important;
+}
