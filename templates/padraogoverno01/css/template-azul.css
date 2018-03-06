@@ -1,3 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);  /* <-- Just for the demo, Yes I like pretty fonts... */
+
+.square {
+    float:left;
+    position: relative;
+    width: 22%;
+    padding-bottom : 7.5%; /* = width for a 1:1 aspect ratio */
+    margin-right:1.5%;
+    margin-left: 1.5%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.img_1-1{background-image:url('http://www.ufsb.edu.br/portal/images/banners/botoes/Helpdesk.png');}
+.img_1-2{background-image:url('http://www.ufsb.edu.br/portal/images/banners/botoes/Moodle.png');}
+.img_1-3{background-image:url('http://www.ufsb.edu.br/portal/images/banners/botoes/SIG.png');}
+.img_1-4{background-image:url('http://www.ufsb.edu.br/portal/images/banners/botoes/Reservas.png');}
+
+/*  following just for the demo */
+
+#bottom {
+    clear:both;
+    margin:0 1.66%;
+    width:89.68%;
+    padding: 3.5%;
+    background-color:#1E1E1E;
+    color: #fff;
+}
+#bottom p{
+    text-align:center;
+    line-height:2em;
+}
+#bottom a{
+    color: #000;
+    text-decoration:none;
+    border:1px solid #000;
+    padding:10px 20px 12px;
+    line-height:70px;
+    background:#ccc;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#bottom a:hover{
+    background:#ECECEC;
+    border:1px solid #fff;
+}
+/*==============  MENU  ===================*/
+
+
+.bm-cool-menu li.active a {
+color: #FFF!important;
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.bm-cool-menu li a:hover {
+color: #FFF!important;
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.bm-cool-menu li.active ul li a
+{
+  background: none;
+}
+
+
+.bm-cool-menu li.active ul li.active .current a
+{
+  background: none;
+}
+
+/*==============  Banner carrossel  ===================*/
+
+div.carousel div.faixa{
+    opacity: 0!important;
+}
+
+div.carousel ol{
+  	z-index: 0;
+}
+
+div.banneritem h1
+{
+  font-size: 2em!important;
+  margin-bottom:0px!important;
+  padding-bottom:0px!important;
+}
+
+
+/*==============  Imagens 3 na fila  ===================*/
+
+div.row-fluid.module.imagens div.module.span4 a.img-rounded
+{
+    padding: 0px!important;
+    margin: 0px!important;
+    width: 100%!important;
+    background-color:#ccc!important;
+}
+
+div.row-fluid.module.imagens div.module.span4 a.img-rounded img
+{
+    width: 100%!important;
+}
+
+#altura {
+    padding-top: 0px!important;
+    margin-top: 0px!important;
+    height: 30px!important;
+  }
+  
+  #altura li
+  {
+    vertical-align: middle!important;
+    line-height: normal!important;
+  }
+  
+  #altura a
+  {
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+    vertical-align: middle;
+  }
+  
+  .span12
+  {
+      margin-left: 0px;
+  }
+ 
+  
+  ul.lista li.span12
+  {
+      height: 72.4px!important;
+      border-bottom: 1px;
+      border-bottom-style: solid;
+      border-color: #ddf;
+  }
+
+/*==============  MENU  ===================*/
+
+.bm-cool-menu-wrap
+{
+  padding-bottom: 30px!important;
+}
+
+ul.nav-child.unstyled li a 
+{
+  color: #000!important;
+}
+
+.bm-cool-menu li.active ul li.active a {
+	color: #fafafa!important;
+}
+
+.bm-cool-menu li.current ul li.active a {
+	color: #fafafa!important;
+}
+
+ul.bm-cool-menu {
+  padding-left: 10px!important;
+}
+
+ul.nav-child.unstyled li a:hover {
+  color:#FFF!important;
+}
+
+nav.bm-cool-menu-wrap ul.bm-cool-menu {
+  margin: 0 auto!important;
+  text-align: left!important;
+  padding-right: 40px!important;
+}
+
+
+.bm-cool-menu a {
+  font-size: 14px!important;
+  font-family: lato!important;
+}
+
+/*==============================================*/
+
 .no-margin-bottom {
     margin-bottom: 0!important
 }
@@ -27,6 +217,7 @@ section,
 summary {
     display: block
 }
+
 audio,
 canvas,
 video {
@@ -51,10 +242,15 @@ button,
 input,
 select,
 textarea {
-    font-family: sans-serif
+    font-family: sans-serif;
+}
+
+html
+{
+    background-color: #002878;
 }
 body {
-    margin: 0
+    margin: 0;
 }
 a:focus {
     outline: thin dotted
@@ -249,12 +445,12 @@ header #logo a {
 header #logo .portal-title-1 {
     font-size: .85em;
     display: block;
-    height: 21px
+    height: 23px
 }
 header #logo h1 {
     font-family: "open_sansextrabold", 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 2.75em;
-    line-height: .8em;
+    line-height: 1em;
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 5px
@@ -366,8 +562,18 @@ header div.sobre a {
 header div.sobre a:hover {
     text-decoration: underline
 }
+
+main {
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(214,234,255,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 80%, rgba(176,202,229,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(214,234,255,1) 0%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 80%,rgba(176,202,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(214,234,255,1) 0%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 80%,rgba(176,202,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6eaff', endColorstr='#b0cae5',GradientType=1 ); /* IE6-9 */
+}
+
 main .container {
-    padding: 48px 0 65px 0
+    padding: 48px 60px 65px 60px;
+  background-color: #FFF;
 }
 main div.row-flutuante {
     margin-top: -28px
@@ -1159,11 +1365,16 @@ main div.container .module h1 a {
     color: #333
 }
 main div.container .module .outstanding-header {
-    border-top: 4px solid #228;
-    background: #fff;
-    min-height: 53px;
+    border-top: 2px solid #228;
+    background: #eff1f4; /* Old browsers */
+    background: -moz-linear-gradient(top, #eff1f4 0%, #fff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #eff1f4 0%,#fff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #eff1f4 0%,#fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    min-height: 40px;
     margin: 0 0 0 0;
-    padding-bottom: 2px;
+    border-radius: 4px;
+    padding-bottom: 0px;
+    padding-top: 2px;
     position: relative
 }
 main div.container .module .outstanding-header a.outstanding-link {
@@ -1206,6 +1417,27 @@ main div.container .module span.title {
     position: relative;
     top: 12px
 }
+
+
+main div.container .module a.img-rounded div.module.span4
+{
+    margin-left:0px!important;
+    padding-left:0px!important;
+}
+
+
+main div.container .module a.img-rounded img
+{
+    width: 230px!important;
+}
+/*
+
+main div.container .module .span4
+{
+    width: 230px;
+}
+
+*/
 main div.container .module a.img-rounded {
     -webkit-border-radius: 8px!important;
     -moz-border-radius: 8px!important;
@@ -1214,13 +1446,19 @@ main div.container .module a.img-rounded {
     border-radius: 8px!important;
     display: block;
     overflow: hidden;
-    margin-bottom: 10px
+    width: 230px!important;
+    margin-bottom: 10px;
+    margin-left: 0!important;
 }
 main div.container .module .outstanding-footer {
-    border-top: 2px solid #3268ba;
-    background: #eeeff2;
+    border-top: 2px solid #999;
+    background: #eff1f4; /* Old browsers */
+    background: -moz-linear-gradient(bottom, #eff1f4 0%, #fff 70%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom, #eff1f4 0%,#fff 70%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top, #eff1f4 0%,#fff 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     height: 22px;
     margin: 26px 0 0 0;
+    border-radius: 0px 0px 4px 4px;
     padding: 10px;
     clear: both
 }
@@ -1320,9 +1558,10 @@ main div.container .manchete-lateral-tit-menor h1 {
 main div.container .manchete-lateral-tit-menor p {
     line-height: 1.1em!important
 }
+
 main div.container .chamadas-secundarias a.img-rounded,
 main div.container .listagem-chamadas-secundarias a.img-rounded {
-    width: 230px;
+    width: 230!important;
     height: 136px;
     -webkit-border-radius: 8px!important;
     -moz-border-radius: 8px!important;
@@ -1336,9 +1575,10 @@ main div.container .listagem-chamadas-secundarias a.img-rounded {
 main div.container .chamadas-secundarias a.img-rounded img,
 main div.container .listagem-chamadas-secundarias a.img-rounded img {
     display: none!;
-    width: 230px!important;
+    width: 230!important;
     height: auto!important
 }
+
 main div.container .manchete-principal span.title {
     top: 7px;
     font-size: .9em!important;
@@ -1408,9 +1648,9 @@ main div.container .listagem-chamadas-secundarias .content-container .descriptio
     margin: 0 0 12px 0!important
 }
 main div.container .outstanding-02 .outstanding-header {
-    border-top: 4px solid #333;
-    border-bottom: 1px solid #717782;
-    background: #fff!important
+    /*border-top: 4px solid #333;*/
+    /*border-bottom: 1px solid #717782;*/
+    background: #eef!important
 }
 main div.container .outstanding-02 .outstanding-footer {
     border-top: 1px solid #717782;
@@ -1420,6 +1660,7 @@ main div.container .variacao-module-01 .outstanding-header {
     border-color: #4c0773;
     background: #eeeff2
 }
+
 main div.container .variacao-module-01 .outstanding-title {
     color: #4c0773
 }
@@ -1548,7 +1789,7 @@ main div.container .module-box-01 .lista h4 a,
 main div.container .module-box-01 .lista h5 a,
 main div.container .module-box-01 .lista h6 a {
     color: #355075;
-    font-size: 1em
+    font-size: 0.6em
 }
 main div.container .module-box-01 .lista h2 a:hover,
 main div.container .module-box-01 .lista h3 a:hover,
@@ -1601,6 +1842,8 @@ main div.container .module-box-01 .gallery-pane h6 a {
     font-size: .85em;
     font-weight: 700
 }
+
+
 main div.container .module-box-01 .gallery-pane .galleria-info-description {
     display: block;
     margin-bottom: 5px;
@@ -1914,7 +2157,8 @@ main div.rastro-navegacao a:hover {
     font-size: 2.7em;
     margin: 0 0 18px 0;
     text-transform: none;
-    letter-spacing: -1px
+    letter-spacing: -1px;
+    border-bottom-width: 2px;
 }
 #content.internas h1 a,
 #content.internas .documentFirstHeading a {
@@ -2039,7 +2283,7 @@ main div.rastro-navegacao a:hover {
 }
 #content.internas ul li {
     display: list-item!important;
-    list-style: square outside!important;
+   /* list-style: square outside!important; */
     line-height: 1.5em!important;
     font-size: 1em;
     margin-bottom: .25em
@@ -2397,7 +2641,7 @@ main div.rastro-navegacao a:hover {
     margin-left: 15px
 }
 #content.internas div.light-image-horz {
-    width: 230px
+    width: 230px;
 }
 #content.internas div.light-image-vert {
     max-width: 180px

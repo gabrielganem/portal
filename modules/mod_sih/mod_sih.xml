@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+  type="module"
+  version="3.0"
+  client="site"
+  method="upgrade">
+  <name>Simple Image Holder</name>
+  <author>Omar Muhammad</author>
+  <creationDate>8/8/2014</creationDate>
+  <copyright>Copyright © 2007 - 2014 Omar's Site. All rights reserved.</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>admin@omar84.com</authorEmail>
+  <authorUrl>http://omar84.com</authorUrl>
+  <version>3.0.2</version>
+  <description>MOD_SIH_XML_DESC</description>
+  <files>
+    <filename module="mod_sih">mod_sih.php</filename>
+    <filename>index.html</filename>
+    <filename>sih.js</filename>
+  </files>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_sih.ini</language>
+    <language tag="en-GB">language/en-GB.mod_sih.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+        <field name="spacer" type="spacer" hr="true" />
+        <field name="&lt;b&gt;General Settings:&lt;/b&gt;" type="spacer" />
+        <field name="file" type="textarea" cols="40" rows="1" default="" label="File Location" description="MOD_SIH_FILE" />
+        <field name="width" type="text" default="" label="Width" description="Width of the (image/flash) (in pixles), leave empty to use the default width" />
+        <field name="height" type="text" default="" label="Height" description="Height of the (image/flash) (in pixles), leave empty to use the default height" />
+        <field name="align" type="list" default="center" label="Align" description="(image/flash) alignment">
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+          <option value="left">Left</option>
+        </field>
+        <field name="txt1" type="textarea" filter="raw" cols="40" rows="2" default="" label="Text Above" description="An optional text to put above the (image/flash), leave empty for no text" />
+        <field name="txt2" type="textarea" filter="raw" cols="40" rows="2" default="" label="Text Below" description="An optional text to put below the (image/flash), leave empty for no text" />
+        <field name="spacer2" type="spacer" hr="true" />
+        <field name="&lt;b&gt;Image Info&lt;/b&gt; (use when holding image files):" type="spacer" />
+        <field name="alt_txt" type="text" default="" label="Alternate Text" description="Text to display when mouseover the image, leave empty to disable" />
+        <field name="link" type="text" default="" label="Link" description="MOD_SIH_LINK" />
+        <field name="page" type="list" default="" label="Link Type" description="when you click the image, it opens the link in either a new window or in the same window">
+          <option value="new_page">New Window</option>
+          <option value="same_page">Same Window</option>
+        </field>
+        <field name="opacity" type="text" default="" label="Image Opcaity" description="Opacity of Image (integer from 0 to 100), leave empty for a fully opaque image" />
+        <field name="opacity2" type="text" default="" label="Image Opcaity On Mouse Over" description="Opacity of Image when the user puts the mouse over it (integer from 0 to 100), leave empty to keep the same opacity" />
+        <field name="img_id" type="text" default="" label="Image Class" description="MOD_SIH_IMG_ID" />
+        <field name="spacer3" type="spacer" hr="true" />
+        <field name="&lt;b&gt;Flash Info&lt;/b&gt; (use when holding flash files):" type="spacer" />
+        <field name="name" type="text" default="" label="Flash Name/ID" description="Identifies the Flash movie to the host environment." />
+        <field name="quality" type="list" default="high" label="Flash Quality" description="Quality setting to use in the Flash Player.">
+          <option value="best">Best</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+          <option value="autohigh">Auto High</option>
+          <option value="autolow">Auto Low</option>
+        </field>
+        <field name="loop" type="list" default="Yes" label="Flash Looping" description="Specifies whether the Flash movie repeats indefinitely or stops when it reaches the last frame.">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </field>
+        <field name="wmode" type="list" default="window" label="Flash Mode" description="Sets the Window Mode property of the Flash movie for transparency, layering, and positioning in the browser.">
+          <option value="window">Window</option>
+          <option value="opaque">Opaque</option>
+          <option value="transparent">Transparent</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

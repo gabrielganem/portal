@@ -1,5 +1,3 @@
-
-
 <?php
 
 /**
@@ -42,7 +40,7 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/ie7.css" />
     <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css" />
-    <![endif]-->    
+    <![endif]-->
     <?php if(TmplPadraoGoverno01Helper::beforeHead('local_mainscript', $this)) TmplPadraoGoverno01Helper::getTemplateMainScripts( $this ); ?>
     <jdoc:include type="head" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -290,9 +288,8 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
     <?php endif; ?>
     <!-- debug -->
     <jdoc:include type="modules" name="debug" />
-    <?php TmplPadraoGoverno01Helper::debug( @$preffix, @$active_item); 
-    
+    <?php TmplPadraoGoverno01Helper::debug( @$preffix, @$active_item);
+
     ?>
 </body>
 </html>
-

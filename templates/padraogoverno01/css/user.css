@@ -14,3 +14,13 @@ main .subnav
 {
   background-color: #ccc !important;
 }
+
+div.module.span12
+{
+  margin-left: 0px!important;
+}
+
+nav.menu_interno
+{
+  list-style:none!important;
+}
