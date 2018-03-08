@@ -3,10 +3,11 @@
 .square {
     float:left;
     position: relative;
-    width: 22%;
+    width: 24.5%;
     padding-bottom : 7.5%; /* = width for a 1:1 aspect ratio */
-    margin-right:1.5%;
-    margin-left: 1.5%;
+  	border-radius: 10px;
+    margin-right: 0.25%;
+    margin-left: 0.25%;
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
@@ -86,17 +87,68 @@ div.carousel div.faixa{
     opacity: 0!important;
 }
 
+div.carousel {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 div.carousel ol{
   	z-index: 0;
 }
 
 div.banneritem h1
 {
-  font-size: 2em!important;
+  font-size: 1em!important;
+  color: #00D;
   margin-bottom:0px!important;
   padding-bottom:0px!important;
 }
 
+div.banneritem p
+{
+ margin:0px;
+ padding:0px;
+}
+
+
+
+ol.carousel-indicators {
+  background-image: none!important;
+}
+
+
+ol.carousel-indicators li{
+  background-image: none!important;
+}
+
+
+/*==============  coluna ===============================*/
+
+div.row-fluid.left
+{
+  margin-left: 2.2%!important;
+}
+
+@media screen and (max-width: 768px) {
+  div.row-fluid.left
+  {
+    margin-left: 0!important;
+  }
+}
+
+/*==============  Ultimas Noticias ===============================*/
+
+ul.lista li.span12
+{
+  padding-top: 0!important;
+}
+
+ul.lista li.span12 h4
+{
+  padding-top: 0!important;
+  margin-top: 8px!important;
+  margin-bottom: 0!important;
+}
 
 /*==============  Imagens 3 na fila  ===================*/
 
@@ -153,6 +205,11 @@ div.row-fluid.module.imagens div.module.span4 a.img-rounded img
   padding-bottom: 30px!important;
 }
 
+.bm-cool-menu-wrap
+{
+  padding-bottom: 30px!important;
+}
+
 ul.nav-child.unstyled li a 
 {
   color: #000!important;
@@ -186,6 +243,34 @@ nav.bm-cool-menu-wrap ul.bm-cool-menu {
   font-family: lato!important;
 }
 
+
+@media screen and (max-width: 768px) {
+  
+  #bm-cool-menu
+  {
+    width: 100%!important;
+  }
+  
+	
+  
+  nav.bm-cool-menu-wrap ul.bm-cool-menu
+  {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    margin: 0px!important;
+    width: 100%!important;
+  }
+
+  ul.bm-cool-menu li
+  {
+    padding: 0!important;
+  }
+  
+  li.deeper {
+    padding-left: 0px!important;
+    margin-left: 0px!important;
+  }
+}
 /*==============================================*/
 
 .no-margin-bottom {
@@ -310,12 +395,16 @@ a:hover {
         border-style: none;
         border-width: 0
     }
+
 }
 body {
     background-color: #fff;
     color: #333;
     font-family: "open_sansregular", 'Open Sans', Arial, Helvetica, sans-serif
 }
+
+
+
 h1,
 h2,
 h3,
@@ -572,7 +661,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6eaff', end
 }
 
 main .container {
-    padding: 48px 60px 65px 60px;
+    padding: 48px 15px 65px 15px;
   background-color: #FFF;
 }
 main div.row-flutuante {
@@ -1165,6 +1254,12 @@ footer .footer-ferramenta p {
         font-size: 1.2em;
         color: #3e67b1
     }
+  
+    	main div.container {
+    	padding: 48px 0px 65px 0px;
+  		background-color: #FFF;
+	}
+  
     main .container #navigation #navigation-section {
         display: none;
         clear: both
@@ -2292,6 +2387,7 @@ main div.rastro-navegacao a:hover {
     display: list-item!important;
     list-style: decimal outside!important;
     line-height: 1.5em!important;
+
     font-size: .9em;
     margin-bottom: .25em
 }

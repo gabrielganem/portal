@@ -62,7 +62,7 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
             <div class="container">
                 <div class="row-fluid accessibility-language-actions-container">
                     <div class="span6 accessibility-container">
-                        <ul id="accessibility">
+                    <!--    <ul id="accessibility">
                             <li>
                                 <a accesskey="1" href="#content" id="link-conteudo">
                                     Ir para o conte&uacute;do
@@ -87,7 +87,7 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
                                     <span>4</span>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <!-- fim div.span6 -->
                     <div class="span6 language-and-actions-container">
@@ -99,7 +99,7 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
 
                 <div class="row-fluid">
 
-<!-- <div class="bs-example">
+ <!--<div class="bs-example">
    <div class="dropdown">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -107,15 +107,15 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
             <li><a href="#">Another action</a></li>
         </ul>
     </div>
-</div> -->
+</div>-->
 
                     <div id="logo" class="span8<?php if($this->params->get('classe_nome_principal', '') != '') echo ' '.$this->params->get('classe_nome_principal'); ?>">
                         <a href="<?php echo JURI::root(); ?>" title="<?php echo $this->params->get('nome_principal', 'Nome principal'); ?>">
                             <?php if( $this->params->get('emblema', '') != '' ): ?>
-                            <img src="<?php echo JURI::root(); ?><?php echo $this->params->get('emblema', ''); ?>" alt="<?php echo $this->params->get('nome_principal', 'Nome principal'); ?>" />
+                            <!--<img src="<?php echo JURI::root(); ?><?php echo $this->params->get('emblema', ''); ?>" alt="<?php echo $this->params->get('nome_principal', 'Nome principal'); ?>" />-->
                             <?php endif; ?>
                             <span class="portal-title-1"><?php echo $this->params->get('denominacao', ''); ?></span>
-                            <h1 class="portal-title corto"><?php echo $this->params->get('nome_principal', 'Nome principal'); ?></h1>
+                            <h1 class="portal-title corto"><img src="http://www.ufsb.edu.br/wp-content/themes/ufsb/framework/img/logo.png" /><!--<?php echo $this->params->get('nome_principal', 'Nome principal'); ?>--></h1>
                             <span class="portal-description"><?php echo $this->params->get('subordinacao', ''); ?></span>
                         </a>
                     </div>

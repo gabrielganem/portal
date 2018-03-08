@@ -17,3 +17,5 @@
 2018-03-01T11:29:48+00:00	INFO 200.128.32.233	joomlafailure	Senha inválida
 2018-03-01T20:03:01+00:00	INFO 200.128.32.233	joomlafailure	Senha inválida
 2018-03-01T23:20:49+00:00	INFO 200.128.32.233	joomlafailure	Usuário não existe
+2018-03-08T11:34:04+00:00	INFO 200.128.32.233	joomlafailure	Senha inválida
+2018-03-08T11:34:15+00:00	INFO 200.128.32.233	joomlafailure	Senha inválida
