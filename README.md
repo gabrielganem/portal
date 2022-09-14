@@ -1,4 +1,4 @@
-Portal padrão em CMS Joomla 3.6.5
+Portal UFSB no padrão GOV.BR
 ================
 
 Sobre esta versão
@@ -41,4 +41,5 @@ Confira a documentação disponível até o momento no repositório provisório 
 
 Desenvolvimento
 ---------------------
+-   [Coordenação de Conteúdos Digitais - UFSB] (https://ufsb.edu.br/protic)
 -   [Comunidade Joomla Calango](http://www.joomlacalango.org/)
